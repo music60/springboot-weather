@@ -16,7 +16,7 @@ public class WeatherSyncJobConfig {
 
     @Bean
     public Trigger getWeatherSyncJobTrigger(){
-         SimpleScheduleBuilder scheduler= SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(500000).repeatForever();
+         SimpleScheduleBuilder scheduler= SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(300000).repeatForever();
         return TriggerBuilder.newTrigger().forJob(getWeatherSyncJobDetail()).withIdentity("weatherSyncJobTrigger").withSchedule(scheduler).build();
     }
 

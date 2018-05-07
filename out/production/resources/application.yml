@@ -1,0 +1,9 @@
+spring:
+  redis:
+    timeout: 5000
+  thymeleaf:
+    cache: false #开发时关闭
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5

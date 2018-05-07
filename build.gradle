@@ -28,8 +28,10 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-data-redis')
 	compile('org.springframework.boot:spring-boot-starter-quartz')
+	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
-	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+	compile('com.alibaba:fastjson:1.2.47')
+	compile('org.apache.httpcomponents:httpclient:4.5.5')
+
 
 }
